@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title>About Wristeys || online store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Stylish&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+               <a href="index.html"><img class="rotate" src="images/ww1.jpg" width="125px"></a> 
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Pieces</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="ContactUs.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <img src="images/cart.png" width="30px" height="30px">
+            <img src="images/menu.png" class="menu-icon"
+            onclick="menutoggle()">
+        </div>
+    </div>
+    </div>
+    <h1 class="typewrite">"TIME + PIECES ©"</h1>
+      
+    <div class="statement">
+     <p >
+        Wrsiteys is where <span>Timeless Pieces</span> come together with fashion in perfect harmony. Our journey began with a keen eye for
+        vintage watches that have been maintened through the years. Starting at thrift popups, we quickly saw the demand for these unique finds,
+        leading us to create an online platform where you can easily explore and shop our collection.We've proudly collaborated with
+        <a href="https://www.instagram.com/picnicandthrift">Picnic and Thrift</a> and <a href="https://www.instagram.com/thriftlandmarket">Thriftland Market</a> , allowing us to bring our
+        TimePieces to a broader audience.While we started with vintage watches, we’ve since expanded our offerings to include modern jewelry,
+        ensuring there's something for everyone who appreciates craftsmanship and style.
+
+        By design of the founders, Wrsiteys is more than just a collection of products—it's a celebration
+        of Time + Pieces that make it memorable. We invite you to discover the story behind each piece in our collection.
+     </p>
+         
+    </div>
+    <h1 class="typewrite">Thrift Pop-Ups</h1> 
+    <div class="gallery-wrap">  
+        
+        <img src="images/back.png" id="backBtn">
+        <div class="gallery">
+            <div>
+                <span><img src="images/ww2.jpg"></span>
+                <span><img src="images/ww3.jpg"></span>
+                <span><img src="images/ww4.jpg"></span>
+                <span><img src="images/ww6.jpg"></span>
+                <span><img src="images/ww7.jpg"></span>
+                <span><img src="images/ww8.jpg"></span>
+                <span><img src="images/ww9.jpg"></span>
+            </div>     
+        </div>
+        <img src="images/next.png" id="nextBtn">
+
+    </div>
+    <div class="contactus">
+        <h1 class="typewrite">"Contact Us"</h1>
+        <p>wanna book us for one of your markets?<br>
+            Have a question about our products?<br>
+            need to get in touch with us for any reason, you cant contact us <a href="ContactUs.html">here</a>
+        </p>
+    </div>
+
+<!-------------FOOTER-------------->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h1>Wristeys <br>The Digital Platform</h1>
+            </div>
+            <div class="footer-col-2">
+                <h2>Useful Links</h2>
+                <ul>
+                    <li>About Us</li>
+                    <li>Discounts</li>
+                    <li>Next Events</li>
+                </ul>
+            </div>
+            <div class="footer-col-3">
+                <h2>Follow Us</h2>
+                <ul>
+                    <li><a href="https://www.instagram.com/wristeys">Instagram</a></li>
+                    <li>Tik-Tok</li>
+                    <li>Whatsapp</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="Copyright">Copyright 2024 - Joshua Stuart @WRISTEYS</p>
+    </div>
+</div>
+        <script>
+            let scrollContainer = document.querySelector(".gallery")
+            let backBtn = document.getElementById("backBtn");
+            let nextBtn = document.getElementById("nextBtn");
+        
+            scrollContainer.addEventListener("wheel", (evt) => {
+                evt.preventDefault();
+                scrollContainer.scrollLeft += evt.deltaY;
+                scrollContainer.style.scrollBehavior="auto";
+            });
+            nextBtn.addEventListener("click", ()=> {
+                scrollContainer.style.scrollBehavior="smooth";
+                scrollContainer.scrollLeft+=900;
+            });
+            backBtn.addEventListener("click", ()=> {
+                scrollContainer.scrollLeft-=900;
+            });
+        </script>
+        
+</body>

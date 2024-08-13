@@ -1,0 +1,440 @@
+*{
+    margin: 0
+    padding 0;
+    box-sizing: border-box;
+}
+body{
+        font-family: "Stylish", serif;
+        font-weight: 400;
+        font-style: normal;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+nav{
+    flex:1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+a{
+    text-decoration: none;
+    color: #8da6ff;
+}
+p
+{color: #8da6ff;
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-2 img{
+    max-width: 75%;
+    padding: 50px 0 ;
+}
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+.btn{
+    display: inline-block;
+    background-color: black;
+    color: #8da6ff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+
+.statement-piece .title{
+    color: #000;
+}
+.statement-piece .statement p{
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    margin-bottom: 45px;
+    padding-bottom: 150px;
+}
+/*------lines 75-80 are for me to achieve a spinning logo ------*/
+.rotate{
+    -webkit-transition: -webkit-transform 7s;
+}
+.rotate:hover{
+    -webkit-transform: rotate(360deg) translateZ(0);
+}
+
+.btn:hover{
+    background:#ff8dc0;
+    color: black;
+    font-weight: bold;
+}
+.header{
+    background: radial-gradient(#ffffff, #fff);
+}
+.header .row{
+    margin-top: 70px;
+}
+.categories{
+    margin: 70px 0;
+}
+.col-3{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+.col-3 img{
+    width: 100%;
+}
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+} 
+.col-4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+.col-4 img{
+width: 100%;
+}
+.title{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #8da6ff;
+}
+.title::after{
+    content: '';
+    background:#ff8dc0 ;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+h4{
+    color: #8da6ff;
+    font-weight: bold;
+    text-align: center;
+}
+.col-4 p{
+    font-size: 14px;
+    color: #ff8dc0;
+}
+.rating .fa{
+   color: black; 
+}
+.col-4:hover{
+    transform: translateY(-5px);
+}
+
+/*------offer------*/
+
+.offer{
+    background: radial-gradient(#fff, #fff);
+    margin-top: 80px;
+    padding:30px 0 ;
+}
+.col-2 .offer-img{
+    padding: 50px;
+}
+small{
+    color:#555 ;
+}
+/*------FOOTER------*/
+.footer{
+    background:#000;
+    color: #ff8dc0;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+.footer p{
+    color:#ff8dc0;
+}
+.footer h3{
+    color: #ff8dc0;
+    margin-bottom: 20px;
+}
+.footer-col-1, .footer-col-2,.footer-col-3{
+    min-width: 250px;
+}
+.footer-col-1{
+    flex-basis: 30%;
+    text-align: left;
+}
+.footer-col-2{
+    flex-basis: 30%;
+    text-align: center;
+}
+.footer-col-2 h2{
+    padding-left: 50px;
+}
+.footer-col-3{
+    flex-basis: 30%;
+    text-align: right;
+}
+.footer-col-3 a{
+    color: #ff8dc0;
+}
+ul{
+    list-style-type: none;
+}
+.Copyright{
+    text-align: center;
+}
+
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+/*------MEDIA QUERY FOR MENU------*/
+@media only screen and (max-width: 800px){
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: black;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    nav ul li{
+       display: block;
+       margin-right: 50px;
+       margin-top: 10px; 
+       margin-bottom: 10px;
+    }
+    .menu-icon{
+        display: block;
+        cursor:pointer ;
+    }
+
+}
+/*------Single Product Details------*/
+.single-product{
+    margin-top: 10px;
+}
+.single-product .col-2 img{
+    padding: 0;
+}
+.single-product .col-2{
+    padding: 20px;
+}
+.single-product  h4{
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.single-product .fa{
+    color: #8da6ff;
+    margin-left: 10px;
+}
+.small-img-row{
+    display: flex;
+    justify-content: space-between;
+}
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+.statement p{
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.contactus p{
+    color: black;
+    text-align: center;
+}
+.statement span{
+    color: #8da6ff;
+}
+/*------MEDIA QUERY FOR MENU less than 600 screen size------*/
+@media only screen and (max-width: 600px){
+.row{
+    text-align: center;
+}
+.col-2, .col-3, .col-4{
+    flex-basis: 100%;
+}
+}
+
+.gallery{
+    width: 900px;
+    display: flex;
+    overflow-x: scroll;
+}
+.gallery div{
+    width: 300%;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    flex: none;
+    grid-gap: 20px;
+    padding: 10px;
+    
+}
+.gallery div img{
+    width: 100%;  
+    -webkit-filter: blur(2px);
+    filter:blur(2px);
+    transform: 0.5s;
+}
+.gallery div img:hover{
+    filter: grayscale(0);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.gallery::-webkit-scrollbar{
+    display: none;
+}
+.gallery-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10% auto;
+}
+.gallery-title{
+    text-align: center;
+    display: inline-block;
+}
+/*------CONTACT US CSS------*/
+.page-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensures the container is vertically centered */
+}
+.contact-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.contact-form label {
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    font-size: 40px;
+}
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-form button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #ff8dc0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+/*------ATTEMPTED TYPEWRITE CLASS------*/
+.typewrite{
+    
+    width: 100%;
+    white-space: nowrap;
+    text-align: center;  /*------I put this padding here because i wanted the text to be in the middle but the text align centre was not working, any chance you could check that out for me------*/
+    overflow: hidden;
+    animation: 
+    typing 2s ,
+    cursor .5s step-end infinite alternate;
+}
+/*------Typewriter effect ------*/
+@keyframes cursor{
+    50% {border-color: transparent;}
+}
+
+@keyframes typing{
+    from {width: 0}
+}
+#backBtn, #nextBtn{
+    width: 50px;
+    cursor: pointer;
+    margin: 40px;
+}
+
+/*------Cart Item details------*/
+.cart-page{
+    margin: 80px auto;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.cart-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+th{
+    text-align: left;
+    padding: 5px;
+    color: #8da6ff;
+    background: black;
+}
+td{
+    padding: 10px 5px;
+}
+td input{
+    width: 40px;
+    height: 30px;
+    pad: 5px;
+}
+td  a{
+    color: #8da6ff;
+    font-size: 12px;
+}
+td img{
+    width: 180px;
+    height: 180px;
+    margin-right: 10px ;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title>Contact Us || online store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Stylish&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+               <a href="index.html"><img src="images/ww1.jpg" width="125px"></a> 
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Pieces</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="ContactUs.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+            <img src="images/menu.png" class="menu-icon"
+            onclick="menutoggle()">
+        </div>
+        </div>
+    </div>
+    <div class="page-wrapper">
+        <div class="contact-container">
+            <h1>CONTACT US</h1>
+            <h2>Need to book us for an event? <br></h2>
+            <p> We'd love to hear from you! Reach out to us using the form below or through our contact details.</p>
+
+            <div class="contact-info">
+                <p><strong>Phone:</strong> +27-83-313-7326</p>
+                <p><strong>Email:</strong> sales@wrsiteys.com</p>
+            </div>
+
+            <form action="#" method="post" class="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+    
+    <!-------------FOOTER-------------->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h1>Wristeys <br>The Digital Platform</h1>
+            </div>
+            <div class="footer-col-2">
+                <h2>Useful Links</h2>
+                <ul>
+                    <li>About Us</li>
+                    <li>Discounts</li>
+                    <li>Next Events</li>
+                </ul>
+            </div>
+            <div class="footer-col-3">
+                <h2>Follow Us</h2>
+                <ul>
+                    <li><a href="https://www.instagram.com/wristeys">Instagram</a></li>
+                    <li>Tik-Tok</li>
+                    <li>Whatsapp</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="Copyright">@2024 - WRISTEYS</p>
+    </div>
+</div>
+<!--JS FOR TOGGLE MENU-->
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px"
+    function menutoggle(){
+        if ( MenuItems.style.maxHeight == "0px")
+    {
+        MenuItems.style.maxHeight = "200px";
+    }
+    else{MenuItems.style.maxHeight = "0px";
+    }
+    }
+</script>
+</body>
